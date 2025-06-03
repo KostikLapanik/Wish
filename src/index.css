@@ -9,6 +9,7 @@
 /* Basic colors */
 :root {
     --black: #000000;
+    --white: #ffffff;
 }
 
 /* Primary colors */
@@ -17,8 +18,23 @@
     --primary-opacity-color: #9082ff2f;
 }
 
+/* Transition */
+:root{
+    --primary-transition: all .3s ease-in-out;
+}
+
+/* Secondary colors */
+:root {
+    --secondary-color: #a29bfe;
+}
+
 /* Shadows */
 :root {
     --header-shadow: 0 15px 20px var(--primary-opacity-color),
         0 -5px 15px rgba(255, 233, 251, 0.3);
+}
+
+/* General for buttons */
+button {
+    cursor: pointer;
 }
