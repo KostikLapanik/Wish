@@ -1,0 +1,24 @@
+/* Glogal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Basic colors */
+:root {
+    --black: #000000;
+}
+
+/* Primary colors */
+:root {
+    --primary-color: #6c5ce7;
+    --primary-opacity-color: #9082ff2f;
+}
+
+/* Shadows */
+:root {
+    --header-shadow: 0 15px 20px var(--primary-opacity-color),
+        0 -5px 15px rgba(255, 233, 251, 0.3);
+}
