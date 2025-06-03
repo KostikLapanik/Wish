@@ -16,11 +16,12 @@
 :root {
     --primary-color: #6c5ce7;
     --primary-opacity-color: #9082ff2f;
+    --primary-gray: #636e72;
     --primary-dark-color: #2d3436;
 }
 
 /* Transition */
-:root{
+:root {
     --primary-transition: all .3s ease-in-out;
 }
 
@@ -38,4 +39,5 @@
 /* General for buttons */
 button {
     cursor: pointer;
+    border: none;
 }
