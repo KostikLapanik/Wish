@@ -48,9 +48,22 @@
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0.1);
         transition: var(--primary-transition);
+        text-decoration: none;
+
+        i {
+            color: var(--white);
+            font-size: 41px;
+        }
 
         &:hover {
             background-color: var(--primary-color);
         }
+    }
+
+    a:nth-child(2) {
+        border-radius: 4px;
+        width: 36px;
+        height: 36px;
+        margin: auto 0;
     }
 }
