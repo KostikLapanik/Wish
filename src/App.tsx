@@ -1,12 +1,14 @@
+import { AboutUsPage } from "./components/AboutUsPage/AboutUsPage";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
-import { MainPage } from "./components/MainPage/MainPage";
+// import { MainPage } from "./components/MainPage/MainPage";
 
 export function App() {
   return (
     <>
       <Header />
-      <MainPage />
+      <AboutUsPage />
+      {/* <MainPage /> */}
       <Footer />
     </>
   )
