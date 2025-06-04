@@ -11,7 +11,7 @@ export function HowItWorks() {
             <section className={styles.steps}>
                 {steps.map((step, i) => {
                     const stepNumber = i + 1;
-                    return <Step number={stepNumber} title={step.title} text={step.text} />
+                    return <Step number={stepNumber} title={step.title} text={step.text} key={stepNumber}/>
                 })}
             </section>
         </section>
