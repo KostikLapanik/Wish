@@ -1,9 +1,10 @@
 import styles from './OurMission.module.scss'
+import generalStyles from '../AboutUsPage.module.css'
 
 export function OurMission() {
     return (
         <section className={styles.ourMission}>
-            <h2>Наша миссия</h2>
+            <h2 className={generalStyles.title}>Наша миссия</h2>
 
             <div className={styles.container}>
                 <div className={styles.content}>

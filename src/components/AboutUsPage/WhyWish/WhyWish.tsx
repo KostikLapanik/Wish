@@ -1,9 +1,10 @@
 import styles from './WhyWish.module.scss'
+import generalStyles from '../AboutUsPage.module.css'
 
 export function WhyWish() {
     return (
         <section className={styles.whyWish}>
-            <h2>Почему стоит использовать Wish</h2>
+            <h2 className={generalStyles.title}>Почему стоит использовать Wish</h2>
 
             <div className={styles.container}>
                 <div>

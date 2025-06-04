@@ -1,9 +1,10 @@
 import styles from './OurPrinciples.module.scss'
+import generalStyles from '../AboutUsPage.module.css'
 
 export function OurPrinciples() {
     return (
         <section className={styles.ourPrinciples}>
-            <h2>Наши принципы</h2>
+            <h2 className={generalStyles.title}>Наши принципы</h2>
 
             <div className={styles.container}>
                 <div className={styles.principle}>
