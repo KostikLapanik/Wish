@@ -1,7 +1,7 @@
-import styles from './HowItWorks.module.css'
+import { Step } from './Step/Step';
+import { steps } from '../../../../data';
 
-import { Step } from './Step/Step'
-import { steps } from '../../../../data'
+import styles from './HowItWorks.module.css';
 
 export function HowItWorks() {
     return (

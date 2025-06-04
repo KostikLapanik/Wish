@@ -1,4 +1,4 @@
-import { FooterContent } from './FooterContent/footerContent'
+import { FooterContent } from './FooterContent/FooterContent'
 
 import styles from './Footer.module.css'
 
