@@ -1,0 +1,13 @@
+footer {
+    background-color: var(--primary-dark-color);
+    color: white;
+    padding: 60px 0 0;
+}
+
+.bottomPart {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
