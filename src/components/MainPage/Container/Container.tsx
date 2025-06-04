@@ -1,8 +1,9 @@
 import { HowItWorks } from './HowItWorks/HowItWorks'
-import styles from './MainContainer.module.css'
 import { PopularWishes } from './PopularWishes/PopularWishes'
 
-export function MainContainer() {
+import styles from './Container.module.css'
+
+export function Container() {
     return (
         <div className={styles.container}>
             <HowItWorks />
