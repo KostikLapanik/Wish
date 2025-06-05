@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { markets } from '../../../data';
 import { Market } from './Market/Market';
 import { PriceFilter } from './PriceFilter/PriceFilter';
@@ -5,6 +6,8 @@ import { PriceFilter } from './PriceFilter/PriceFilter';
 import styles from './Filter.module.scss'
 
 export function Filter() {
+    const [country, setCountry] = useState('');
+
     return (
         <section className={styles.filter}>
             <form action="">
@@ -20,7 +23,11 @@ export function Filter() {
 
                 <PriceFilter />
 
-                <select name="country" id="" title="country"></select>
+                <div className={styles.inputGroup}>
+                    <label htmlFor="country">Введите страну получателя:</label>
+                    <input type='text' name='country' title='country' id='country'
+                        onChange={e => setCountry(e.currentTarget.value)} value={country} />
+                </div>
 
                 <label htmlFor="ownerName"></label>
                 <input type="text" id="ownerName" title="ownerName" />
