@@ -1,0 +1,7 @@
+.wishes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(327px, 1fr));
+    gap: 25px;
+    padding: 30px;
+    transition: var(--primary-transition);
+}
