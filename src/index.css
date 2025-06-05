@@ -34,7 +34,21 @@
 /* Shadows */
 :root {
     --header-shadow: 0 15px 20px var(--primary-opacity-color),
-        0 -5px 15px rgba(255, 233, 251, 0.3);
+        0 -5px 15px #ffe9fb4d;
+    --filter-shadow-color: #0000004d;
+}
+
+/* Markets colors */
+:root{
+    --primary-wb-bg: linear-gradient(45deg, #ed3cca, #7d18f8);
+    --secondary-wb-bg: linear-gradient(15deg, #d32dd8, #940df2);
+
+    --ozon-color: #1669ff;
+
+    --primary-ym-color: #fce000;
+    --secondary-ym-color: #ff5226;
+
+    --aliexpress-color: #fe2722;
 }
 
 /* General for buttons */
