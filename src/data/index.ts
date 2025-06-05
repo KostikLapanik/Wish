@@ -15,4 +15,6 @@ export const steps = [
         title: 'Получайте подарки',
         text: 'Другие пользователи могут заказать для вас вещи из вашего списка.',
     },
-]
+];
+
+export const markets = ['wb', 'ozon', 'ym', 'ali'];
