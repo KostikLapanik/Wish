@@ -1,7 +1,8 @@
 import { markets } from '../../../data';
+import { Market } from './Market/Market';
+import { PriceFilter } from './PriceFilter/PriceFilter';
 
 import styles from './Filter.module.scss'
-import { Market } from './Market/Market';
 
 export function Filter() {
     return (
@@ -12,13 +13,12 @@ export function Filter() {
 
                     <div className={styles.options}>
                         {markets.map((market: string) => {
-                            return <Market marketSigh={market}/>
+                            return <Market marketSigh={market} />
                         })}
                     </div>
                 </div>
 
-                <label htmlFor="price"></label>
-                <input type="number" id="price" title="Price" placeholder="Price" />
+                <PriceFilter />
 
                 <select name="country" id="" title="country"></select>
 

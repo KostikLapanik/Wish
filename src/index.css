@@ -10,6 +10,7 @@
 :root {
     --black: #000000;
     --white: #ffffff;
+    --green: #008000;
 }
 
 /* Primary colors */
@@ -20,15 +21,15 @@
     --primary-dark-color: #2d3436;
 }
 
-/* Transition */
-:root {
-    --primary-transition: all .3s ease-in-out;
-}
-
 /* Secondary colors */
 :root {
     --secondary-color: #a29bfe;
     --secondary-white: #f5f6fa;
+}
+
+/* Transition */
+:root {
+    --primary-transition: all .3s ease-in-out;
 }
 
 /* Shadows */
@@ -39,7 +40,7 @@
 }
 
 /* Markets colors */
-:root{
+:root {
     --primary-wb-bg: linear-gradient(45deg, #ed3cca, #7d18f8);
     --secondary-wb-bg: linear-gradient(15deg, #d32dd8, #940df2);
 
