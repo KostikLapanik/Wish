@@ -25,6 +25,8 @@
 :root {
     --secondary-color: #a29bfe;
     --secondary-white: #f5f6fa;
+    --secondary-dark-color: #333;
+    --secondary-gray: #666;
 }
 
 /* Transition */
@@ -37,6 +39,12 @@
     --header-shadow: 0 15px 20px var(--primary-opacity-color),
         0 -5px 15px #ffe9fb4d;
     --filter-shadow-color: #0000004d;
+}
+
+/* Wish */
+:root{
+    --wish-dark-color: #222;
+    --wish-description-color: #555;
 }
 
 /* Markets colors */

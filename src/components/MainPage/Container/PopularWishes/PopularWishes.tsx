@@ -1,4 +1,4 @@
-import { Wish } from './Wish/Wish'
+import { Wish } from '../../../Wish/Wish'
 
 import styles from './PopularWishes.module.scss'
 
