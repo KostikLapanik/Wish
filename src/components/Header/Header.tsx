@@ -1,18 +1,24 @@
+import type { Dispatch, SetStateAction } from 'react'
+
 import styles from './Header.module.scss'
 
-export function Header() {
+type Props = {
+  setPage: Dispatch<SetStateAction<'main' | 'aboutUs' | 'wishlists' | 'account'>>,
+}
+
+export function Header({ setPage }: Props) {
   return (
     <header>
-        <h1 className={styles.title}>Wish</h1>
+      <h1 className={styles.title}>Wish</h1>
 
-        <nav>
-            <ul>
-                <li><a href="#" className={styles.link}>Главная</a></li>
-                <li><a href="#" className={styles.link}>О нас</a></li>
-                <li><a href="#" className={styles.link}>Вишлисты</a></li>
-                <li><a href="#" className={styles.link}>Мой аккаунт</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#" className={styles.link} onClick={() => setPage('main')}>Главная</a></li>
+          <li><a href="#" className={styles.link} onClick={() => setPage('aboutUs')}>О нас</a></li>
+          <li><a href="#" className={styles.link} onClick={() => setPage('wishlists')}>Вишлисты</a></li>
+          <li><a href="#" className={styles.link} onClick={() => setPage('account')}>Мой аккаунт</a></li>
+        </ul>
+      </nav>
     </header>
   )
 }
