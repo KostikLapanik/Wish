@@ -5,7 +5,7 @@ import { MainPage } from "./components/MainPage/MainPage";
 import { AboutUsPage } from "./components/AboutUsPage/AboutUsPage";
 
 export function App() {
-  const [currentPage, setCurrentPage] = useState('main');
+  const [currentPage, setCurrentPage] = useState<'main' | 'aboutUs' | 'wishlists' | 'account'>('main');
 
   let page: JSX.Element;
   switch (currentPage) {

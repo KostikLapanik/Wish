@@ -3,7 +3,7 @@ import type { Dispatch, SetStateAction } from 'react'
 import styles from './Header.module.scss'
 
 type Props = {
-  setPage: Dispatch<SetStateAction<string>>,
+  setPage: Dispatch<SetStateAction<'main' | 'aboutUs' | 'wishlists' | 'account'>>,
 }
 
 export function Header({ setPage }: Props) {
