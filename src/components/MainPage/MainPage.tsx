@@ -1,13 +1,15 @@
 import { Hero } from "./Hero/Hero";
 import { Container } from "./Container/Container";
 
-import './MainPage.module.css'
+import styles from './MainPage.module.css'
 
 export function MainPage() {
     return (
         <main>
-            <Hero />
-            <Container />
+            <div className={styles.wrapper}>
+                <Hero />
+                <Container />
+            </div>
         </main>
     )
 }
