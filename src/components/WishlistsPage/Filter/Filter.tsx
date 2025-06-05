@@ -29,8 +29,12 @@ export function Filter() {
                         onChange={e => setCountry(e.currentTarget.value)} value={country} />
                 </div>
 
-                <label htmlFor="ownerName"></label>
-                <input type="text" id="ownerName" title="ownerName" />
+                <div className={styles.inputGroup}>
+                    <label htmlFor="ownerName">Введите имя получателя:</label>
+                    <input type="text" id="ownerName" title="ownerName" />
+                </div>
+
+                <button type='submit'>Применить</button>
             </form>
         </section>
     )
