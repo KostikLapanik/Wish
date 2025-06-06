@@ -1,0 +1,146 @@
+.wishCard {
+    width: 100%;
+    border-radius: 12px;
+    height: 493px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: var(--primary-transition);
+    background: var(--white);
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px var(--primary-opacity-color);
+    }
+}
+
+.wishImage {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    &:hover img {
+        transform: scale(1.05);
+    }
+}
+
+.wishContent {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 259px;
+    gap: 21px;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--secondary-white);
+    border-radius: 12px;
+    padding: 12px;
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}
+
+.userName {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondary-dark-color);
+}
+
+.userLocation {
+    margin: 4px 0 0;
+    font-size: 0.8rem;
+    color: var(--secondary-gray);
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: '\f3c5';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        margin-right: 4px;
+        font-size: 0.8rem;
+    }
+}
+
+.wishTitle {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--wish-dark-color);
+}
+
+.wishDescription {
+    margin: 0 0 12px;
+    font-size: 0.9rem;
+    color: var(--wish-description-color);
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wishMeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.marketplace {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--white);
+    border-radius: 30px;
+    padding: 5px 10px;
+    background: var(--primary-color);
+    font-weight: 500;
+
+    i {
+        font-size: 0.8rem;
+    }
+}
+
+.price {
+    font-weight: 700;
+    color: var(--wish-dark-color);
+}
+
+.detailsButton {
+    width: 100%;
+    padding: 10px 16px;
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+        background: var(--secondary-white);
+        color: var(--primary-color);
+    }
+
+    i {
+        font-size: 0.8rem;
+        transform: translateY(12%);
+    }
+}
