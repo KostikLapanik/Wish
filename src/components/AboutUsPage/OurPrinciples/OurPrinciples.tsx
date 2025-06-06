@@ -8,7 +8,7 @@ export function OurPrinciples() {
 
             <div className={styles.container}>
                 <div className={styles.principle}>
-                    <i className="fa-solid fa-face-smile"></i>
+                    <i className="fa-solid fa-heart"></i>
                     <h4>Простота</h4>
                     <p>Интуитивно понятный интерфейс без лишних сложностей. Все, что нужно -
                         в несколько кликов.</p>
@@ -21,13 +21,13 @@ export function OurPrinciples() {
                 </div>
 
                 <div className={styles.principle}>
-                    <i className="fa-solid fa-atom"></i>
+                    <i className="fa-solid fa-lightbulb"></i>
                     <h4>Практичность</h4>
                     <p>Полезный функционал, который действительно решает проблему выбора подарков.</p>
                 </div>
 
                 <div className={styles.principle}>
-                    <i className="fa-solid fa-handshake-simple"></i>
+                    <i className="fa-solid fa-hand-holding-heart"></i>
                     <h4>Доброта</h4>
                     <p>Мы верим, что хорошие подарки делают отношения между людьми теплее.</p>
                 </div>
