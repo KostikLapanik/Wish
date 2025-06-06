@@ -1,0 +1,18 @@
+.deliveryPoints {
+    overflow: scroll;
+    margin: 20px 0 15px 0;
+    display: flex;
+    scrollbar-width: none;
+}
+
+.deliveryPoint{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-width: 180px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: var(--secondary-white);
+    border-radius: 20px;
+}
