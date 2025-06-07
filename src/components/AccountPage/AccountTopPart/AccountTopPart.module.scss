@@ -153,13 +153,6 @@
 }
 
 .active {
-    transform: translateY(-15%) translateX(5%);
     color: var(--white);
     background-color: var(--primary-color);
-
-    &:hover {
-        color: var(--primary-color);
-        background-color: var(--white);
-        transform: translateY(0) translateX(0);
-    }
 }

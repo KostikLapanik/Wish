@@ -1,15 +1,40 @@
-export function AccountBottomPart() {
+import type { JSX } from "react";
+
+type Props = {
+    module: 'friends' | 'wishlist' | 'presents' | 'settings',
+}
+
+export function AccountBottomPart({ module }: Props) {
+    let moduleElement: JSX.Element;
+
+    switch (module) {
+        case 'friends':
+            moduleElement = 1
+            break;
+
+        case 'wishlist':
+            moduleElement = 2
+            break;
+
+        case 'presents':
+            moduleElement = 3
+            break;
+
+        case 'settings':
+            moduleElement = 4
+            break;
+
+        default:
+            moduleElement = 2
+            break;
+    }
+
+    console.log(moduleElement)
+    console.log(module)
+
     return (
         <section>
-            <section>
-                <h2>Друзья</h2>
-
-                <ul>
-                    <li>
-                        <div>Друзья</div>
-                    </li>
-                </ul>
-            </section>
+            {moduleElement}
 
             <section>
                 <h2>Мой вишлист</h2>

@@ -1,8 +1,32 @@
 import { DeliveryPoints } from './DeliveryPoints/DeliveryPoints';
+import type React from 'react';
 
 import styles from './AccountTopPart.module.scss';
 
-export function AccountTopPart() {
+type Props = {
+    setModule: React.Dispatch<React.SetStateAction<"friends" | "wishlist" | "presents" | "settings">>
+}
+
+export function AccountTopPart({ setModule }: Props) {
+    const allModuleButtons = Array.from(document.querySelectorAll(`.${styles.menuBtn}`));
+
+    function changeModule(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
+        const currentButton: HTMLButtonElement = event.currentTarget;
+
+        if (allModuleButtons) {
+            allModuleButtons.forEach((button) => {
+                if (button.classList.contains(styles.active) && button !== currentButton) {
+                    button.classList.remove(styles.active);
+                }
+            })
+        }
+
+        currentButton.classList.add(styles.active);
+        const moduleName = currentButton.attributes["module-name"].value;
+
+        setModule(moduleName);
+    }
+
     return (
         <section className={styles.topSection}>
             <div className={styles.content}>
@@ -35,10 +59,33 @@ export function AccountTopPart() {
 
             <nav className={styles.menu}>
                 <ul>
-                    <li><button type="button" className={styles.menuBtn}>Друзья</button></li>
-                    <li><button type="button" className={`${styles.menuBtn} ${styles.active}`}>Мой вишлист</button></li>
-                    <li><button type="button" className={styles.menuBtn}>Заказанные подарки</button></li>
-                    <li><button type="button" className={styles.menuBtn}>Настройки</button></li>
+                    <li>
+                        <button type="button"
+                            className={styles.menuBtn}
+                            module-name='friends'
+                            onClick={(e) => changeModule(e)}>Друзья</button>
+                    </li>
+
+                    <li>
+                        <button type="button"
+                            className={`${styles.menuBtn} ${styles.active}`}
+                            module-name='wishlist'
+                            onClick={(e) => changeModule(e)}>Мой вишлист</button>
+                    </li>
+
+                    <li>
+                        <button type="button"
+                            className={styles.menuBtn}
+                            module-name='presents'
+                            onClick={(e) => changeModule(e)}>Заказанные подарки</button>
+                    </li>
+
+                    <li>
+                        <button type="button"
+                            className={styles.menuBtn}
+                            module-name='settings'
+                            onClick={(e) => changeModule(e)}>Настройки</button>
+                    </li>
                 </ul>
             </nav>
         </section>
