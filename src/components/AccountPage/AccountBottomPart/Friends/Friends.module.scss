@@ -14,12 +14,12 @@
 
     h2 {
         font-size: 2rem;
-        color: #333;
+        color: var(--secondary-dark-color);
         margin-bottom: 10px;
     }
 
     p {
-        color: #666;
+        color: var(--secondary-gray);
         max-width: 700px;
         margin: 0 auto;
     }
@@ -29,30 +29,30 @@
     grid-column: 1 / -1;
     text-align: center;
     padding: 40px 20px;
-    background: #f9f9f9;
+    background: var(--secondary-white);
     border-radius: 10px;
     margin-top: 20px;
 
     i {
         font-size: 3rem;
-        color: #6c5ce7;
+        color: var(--primary-color);
         margin-bottom: 20px;
     }
 
     h3 {
-        color: #333;
+        color: var(--secondary-dark-color);
         margin-bottom: 10px;
     }
 
     p {
-        color: #666;
+        color: var(--secondary-gray);
         max-width: 500px;
         margin: 0 auto 20px;
     }
 
     button {
-        background: #6c5ce7;
-        color: white;
+        background: var(--primary-color);
+        color: var(--white);
         border: none;
         padding: 10px 20px;
         border-radius: 5px;
