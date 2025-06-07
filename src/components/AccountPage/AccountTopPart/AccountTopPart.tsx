@@ -33,12 +33,12 @@ export function AccountTopPart() {
                 </section>
             </div>
 
-            <nav className="account-menu">
+            <nav className={styles.menu}>
                 <ul>
-                    <li><button type="button">Друзья</button></li>
-                    <li><button type="button" className="active">Мой вишлист</button></li>
-                    <li><button type="button">Заказанные подарки</button></li>
-                    <li><button type="button">Настройки</button></li>
+                    <li><button type="button" className={styles.menuBtn}>Друзья</button></li>
+                    <li><button type="button" className={`${styles.menuBtn} ${styles.active}`}>Мой вишлист</button></li>
+                    <li><button type="button" className={styles.menuBtn}>Заказанные подарки</button></li>
+                    <li><button type="button" className={styles.menuBtn}>Настройки</button></li>
                 </ul>
             </nav>
         </section>
