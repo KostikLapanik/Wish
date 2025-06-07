@@ -1,4 +1,5 @@
 import type { JSX } from "react";
+import { Freinds } from "./Friends/Freinds";
 
 type Props = {
     module: 'friends' | 'wishlist' | 'presents' | 'settings',
@@ -9,7 +10,7 @@ export function AccountBottomPart({ module }: Props) {
 
     switch (module) {
         case 'friends':
-            moduleElement = 1
+            moduleElement = <Freinds />
             break;
 
         case 'wishlist':
