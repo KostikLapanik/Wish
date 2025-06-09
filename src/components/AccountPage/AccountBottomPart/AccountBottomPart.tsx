@@ -2,6 +2,7 @@ import type { JSX } from "react";
 import { Freinds } from "./Friends/Freinds";
 import { Wishlist } from "./Wishlist/Wishlist";
 import { Presents } from "./Presents/Presents";
+import { Settings } from "./Settings/Settings";
 
 type Props = {
     module: 'friends' | 'wishlist' | 'presents' | 'settings',
@@ -24,7 +25,7 @@ export function AccountBottomPart({ module }: Props) {
             break;
 
         case 'settings':
-            moduleElement = 4
+            moduleElement = <Settings />
             break;
 
         default:
@@ -32,17 +33,9 @@ export function AccountBottomPart({ module }: Props) {
             break;
     }
 
-    console.log(moduleElement)
-    console.log(module)
-
     return (
-        <section>
+        <>
             {moduleElement}
-            <section>
-                <h2>Настройки</h2>
-
-                {/* Смотреть RentRide */}
-            </section>
-        </section>
+        </>
     )
 }
