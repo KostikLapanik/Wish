@@ -1,6 +1,7 @@
 import type { JSX } from "react";
 import { Freinds } from "./Friends/Freinds";
 import { Wishlist } from "./Wishlist/Wishlist";
+import { Presents } from "./Presents/Presents";
 
 type Props = {
     module: 'friends' | 'wishlist' | 'presents' | 'settings',
@@ -19,7 +20,7 @@ export function AccountBottomPart({ module }: Props) {
             break;
 
         case 'presents':
-            moduleElement = 3
+            moduleElement = <Presents />
             break;
 
         case 'settings':
@@ -37,13 +38,6 @@ export function AccountBottomPart({ module }: Props) {
     return (
         <section>
             {moduleElement}
-
-            <section>
-                <h2>Заказанные подарки</h2>
-
-                <div>Заказанные подарки</div>
-            </section>
-
             <section>
                 <h2>Настройки</h2>
 
