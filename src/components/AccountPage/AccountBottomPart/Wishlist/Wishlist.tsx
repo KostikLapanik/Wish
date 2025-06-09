@@ -1,6 +1,7 @@
 import { Wish } from '../../../Wish/Wish';
 
 import styles from './Wishlist.module.scss';
+import globaStyles from '../../../global.module.css';
 
 export function Wishlist() {
     return (
@@ -13,7 +14,7 @@ export function Wishlist() {
                 </button>
             </div>
 
-            <div className={styles.container}>
+            <div className={globaStyles.wishWrapper}>
                 <Wish />
                 <Wish />
                 <Wish />

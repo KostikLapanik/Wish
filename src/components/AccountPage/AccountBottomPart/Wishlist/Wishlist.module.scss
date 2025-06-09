@@ -2,6 +2,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .title {
@@ -63,11 +64,4 @@
         font-size: 0.9rem;
         margin-top: 3px;
     }
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 20px;
 }
