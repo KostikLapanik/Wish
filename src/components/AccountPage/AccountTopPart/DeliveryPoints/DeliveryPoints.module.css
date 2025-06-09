@@ -1,18 +1,41 @@
-.deliveryPoints {
-    overflow: scroll;
+.container {
     margin: 20px 0 15px 0;
     display: flex;
-    scrollbar-width: none;
+    position: relative;
 }
 
-.deliveryPoint{
+.deliveryPoints {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow: scroll;
+    scrollbar-width: none;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.deliveryPoint {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     min-width: 180px;
-    margin-right: 10px;
     padding: 10px;
     background-color: var(--secondary-white);
     border-radius: 20px;
+}
+
+.arrow {
+    position: absolute;
+    top: 10px;
+    color: var(--secondary-dark-color);
+    font-size: 20px;
+}
+
+.leftArrow {
+    left: -2.3%;
+}
+
+.rightArrow {
+    right: -2.3%;
 }
