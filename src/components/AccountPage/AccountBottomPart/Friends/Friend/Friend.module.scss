@@ -1,0 +1,124 @@
+.friend {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: var(--primary-transition);
+    max-width: 500px;
+    max-height: 195px;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.avatar {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    grid-area: 1 / 1 / 2 / 2;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 3px solid var(--secondary-white);
+    }
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    grid-area: 1 / 2 / 2 / 3;
+
+    h3 {
+        margin: 0;
+        font-size: 1.4rem;
+        color: var(--secondary-dark-color);
+        font-weight: 700;
+    }
+}
+
+.location {
+    margin: 0;
+    color: var(--secondary-gray);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    i {
+        color: var(--primary-color);
+        font-size: 0.9rem;
+    }
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+
+    a {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #5649c0;
+        }
+    }
+}
+
+.giftsStats {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.statItem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    color: var(--stat-item-color);
+
+    i {
+        font-size: 1rem;
+
+        &.sent {
+            color: var(--send-gifts-color);
+        }
+
+        &.received {
+            color: var(--received-gifts-color);
+        }
+    }
+
+    strong {
+        font-weight: 700;
+        color: var(--secondary-dark-color);
+    }
+}
+
+@media (max-width: 480px) {
+    .friend {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .giftsStats {
+        justify-content: center;
+    }
+}

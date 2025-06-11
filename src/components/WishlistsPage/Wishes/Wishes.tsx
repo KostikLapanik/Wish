@@ -1,6 +1,7 @@
 import { Wish } from '../../Wish/Wish';
 
 import styles from './Wishes.module.css';
+import globalStyles from '../../global.module.css';
 
 export function Wishes({ isFiltersOpen }: { isFiltersOpen: boolean }) {
 
@@ -12,7 +13,7 @@ export function Wishes({ isFiltersOpen }: { isFiltersOpen: boolean }) {
     }
 
     return (
-        <section className={styles.wishes}>
+        <section className={`${globalStyles.wishWrapper} ${styles.wishes}`}>
             <Wish />
             <Wish />
             <Wish />

@@ -39,12 +39,21 @@
     --header-shadow: 0 15px 20px var(--primary-opacity-color),
         0 -5px 15px #ffe9fb4d;
     --filter-shadow-color: #0000004d;
+    --social-shadow-color: #00000027;
+    --add-wish-button-shadow-color: #6c5ce766;
 }
 
 /* Wish */
-:root{
+:root {
     --wish-dark-color: #222;
     --wish-description-color: #555;
+}
+
+/* Account */
+:root {
+    --stat-item-color: #6b6b6b;
+    --send-gifts-color: #ff7675;
+    --received-gifts-color: #00b894;
 }
 
 /* Markets colors */

@@ -1,0 +1,22 @@
+.title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h2 {
+        color: var(--secondary-dark-color);
+        font-family: 2rem;
+    }
+
+    p {
+        color: var(--secondary-gray);
+        font-size: 1rem;
+        margin-top: 4px;
+    }
+}
+
+.settings {
+    text-align: center;
+}

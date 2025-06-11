@@ -4,6 +4,7 @@ import { Header } from "./components/Header/Header";
 import { MainPage } from "./components/MainPage/MainPage";
 import { AboutUsPage } from "./components/AboutUsPage/AboutUsPage";
 import { WishlistsPage } from "./components/WishlistsPage/WishlistsPage";
+import { AccountPage } from "./components/AccountPage/AccountPage";
 
 export function App() {
   const [currentPage, setCurrentPage] = useState<'main' | 'aboutUs' | 'wishlists' | 'account'>('main');
@@ -23,7 +24,7 @@ export function App() {
       break;
 
     case 'account':
-      page = <MainPage />
+      page = <AccountPage />
       break;
 
     default:
