@@ -1,3 +1,4 @@
 .wishes {
+    padding: 30px;
     transition: var(--primary-transition);
 }

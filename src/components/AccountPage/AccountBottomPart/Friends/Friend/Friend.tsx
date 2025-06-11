@@ -4,7 +4,7 @@ export function Friend() {
     return (
         <div className={styles.friend}>
             <div className={styles.avatar}>
-                <img src="" alt="User avatar" />
+                <img src="null" alt="User avatar" />
             </div>
 
             <div className={styles.userInfo}>

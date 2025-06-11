@@ -8,9 +8,8 @@ type Props = {
 }
 
 export function AccountTopPart({ setModule }: Props) {
-    const allModuleButtons = Array.from(document.querySelectorAll(`.${styles.menuBtn}`));
-
     function changeModule(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
+        const allModuleButtons = Array.from(document.querySelectorAll(`.${styles.menuBtn}`));
         const currentButton: HTMLButtonElement = event.currentTarget;
 
         if (allModuleButtons) {
@@ -22,7 +21,29 @@ export function AccountTopPart({ setModule }: Props) {
         }
 
         currentButton.classList.add(styles.active);
-        const moduleName = currentButton.attributes["module-name"].value;
+
+        let moduleName: "friends" | "wishlist" | "presents" | "settings" = 'wishlist';
+
+        switch (currentButton.name) {
+            case 'friends':
+                moduleName = 'friends'
+                break;
+
+            case 'wishlist':
+                moduleName = 'wishlist'
+                break;
+
+            case 'presents':
+                moduleName = 'presents'
+                break;
+
+            case 'settings':
+                moduleName = 'settings'
+                break;
+            default:
+                moduleName = 'wishlist'
+                break;
+        }
 
         setModule(moduleName);
     }
@@ -62,28 +83,28 @@ export function AccountTopPart({ setModule }: Props) {
                     <li>
                         <button type="button"
                             className={styles.menuBtn}
-                            module-name='friends'
+                            name='friends'
                             onClick={(e) => changeModule(e)}>Друзья</button>
                     </li>
 
                     <li>
                         <button type="button"
                             className={`${styles.menuBtn} ${styles.active}`}
-                            module-name='wishlist'
+                            name='wishlist'
                             onClick={(e) => changeModule(e)}>Мой вишлист</button>
                     </li>
 
                     <li>
                         <button type="button"
                             className={styles.menuBtn}
-                            module-name='presents'
+                            name='presents'
                             onClick={(e) => changeModule(e)}>Заказанные подарки</button>
                     </li>
 
                     <li>
                         <button type="button"
                             className={styles.menuBtn}
-                            module-name='settings'
+                            name='settings'
                             onClick={(e) => changeModule(e)}>Настройки</button>
                     </li>
                 </ul>
