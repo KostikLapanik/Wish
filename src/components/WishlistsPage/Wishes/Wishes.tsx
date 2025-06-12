@@ -4,8 +4,8 @@ import styles from './Wishes.module.css';
 import globalStyles from '../../global.module.css';
 
 export function Wishes({ isFiltersOpen }: { isFiltersOpen: boolean }) {
-
     const wishes = document.querySelector(`.${styles.wishes}`);
+
     if (isFiltersOpen && wishes) {
         wishes.style.padding = '30px 30px 30px 414px'
     } else if (!isFiltersOpen && wishes) {
@@ -14,12 +14,12 @@ export function Wishes({ isFiltersOpen }: { isFiltersOpen: boolean }) {
 
     return (
         <section className={`${globalStyles.wishWrapper} ${styles.wishes}`}>
-            <Wish />
-            <Wish />
-            <Wish />
-            <Wish />
-            <Wish />
-            <Wish />
+            <Wish type='basic' />
+            <Wish type='basic' />
+            <Wish type='basic' />
+            <Wish type='basic' />
+            <Wish type='basic' />
+            <Wish type='basic' />
         </section>
     )
 }

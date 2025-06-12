@@ -19,13 +19,13 @@ export function Presents() {
             </div>
 
             <div className={globalStyles.wishWrapper}>
-                <Wish />
-                <Wish />
-                <Wish />
-                <Wish />
-                <Wish />
-                <Wish />
-                <Wish />
+                <Wish type="present" />
+                <Wish type="present" />
+                <Wish type="present" />
+                <Wish type="present" />
+                <Wish type="present" />
+                <Wish type="present" />
+                <Wish type="present" />
             </div>
         </section>
     )

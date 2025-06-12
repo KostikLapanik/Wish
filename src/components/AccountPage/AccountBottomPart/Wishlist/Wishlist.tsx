@@ -15,13 +15,13 @@ export function Wishlist() {
             </div>
 
             <div className={globaStyles.wishWrapper}>
-                <Wish />
-                <Wish />
-                <Wish />
-                <Wish />
-                <Wish />
-                <Wish />
-                <Wish />
+                <Wish type='personal_wish' />
+                <Wish type='personal_wish' />
+                <Wish type='personal_wish' />
+                <Wish type='personal_wish' />
+                <Wish type='personal_wish' />
+                <Wish type='personal_wish' />
+                <Wish type='personal_wish' />
             </div>
         </section>
     )
