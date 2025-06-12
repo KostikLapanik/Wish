@@ -24,9 +24,6 @@ export function Wish({ type }: { type: string }) {
             break;
     }
 
-
-    console.log(wishCard);
-
     return (
         <>
             {wishCard || <BasicWish />}
