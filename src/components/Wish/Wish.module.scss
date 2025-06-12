@@ -1,7 +1,6 @@
 .wishCard {
     width: 100%;
     border-radius: 12px;
-    height: 493px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: var(--primary-transition);
@@ -34,7 +33,6 @@
     padding: 16px;
     display: flex;
     flex-direction: column;
-    height: 259px;
     gap: 21px;
 }
 
@@ -67,10 +65,7 @@
     display: flex;
     align-items: center;
 
-    &::before {
-        content: '\f3c5';
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 900;
+    i {
         margin-right: 4px;
         font-size: 0.8rem;
     }

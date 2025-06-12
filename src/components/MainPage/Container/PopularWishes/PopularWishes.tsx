@@ -9,7 +9,7 @@ export function PopularWishes() {
             <h2 className={styles.title}>Популярные желания</h2>
 
             <section className={globalStyles.wishWrapper}>
-                <Wish />
+                <Wish type='basic' />
             </section>
         </section>
     )
