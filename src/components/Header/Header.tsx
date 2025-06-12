@@ -1,24 +1,25 @@
-import type { Dispatch, SetStateAction } from 'react'
+import type { Dispatch, SetStateAction } from 'react';
+import type { pagesTypes } from '../../types';
 
-import styles from './Header.module.scss'
+import styles from './Header.module.scss';
 
 type Props = {
-  setPage: Dispatch<SetStateAction<'main' | 'aboutUs' | 'wishlists' | 'account'>>,
+    setPage: Dispatch<SetStateAction<pagesTypes>>,
 }
 
 export function Header({ setPage }: Props) {
-  return (
-    <header>
-      <h1 className={styles.title}>Wish</h1>
+    return (
+        <header>
+            <h1 className={styles.title}>Wish</h1>
 
-      <nav>
-        <ul>
-          <li><a href="#" className={styles.link} onClick={() => setPage('main')}>Главная</a></li>
-          <li><a href="#" className={styles.link} onClick={() => setPage('aboutUs')}>О нас</a></li>
-          <li><a href="#" className={styles.link} onClick={() => setPage('wishlists')}>Вишлисты</a></li>
-          <li><a href="#" className={styles.link} onClick={() => setPage('account')}>Мой аккаунт</a></li>
-        </ul>
-      </nav>
-    </header>
-  )
+            <nav>
+                <ul>
+                    <li><a href="#" className={styles.link} onClick={() => setPage('main')}>Главная</a></li>
+                    <li><a href="#" className={styles.link} onClick={() => setPage('aboutUs')}>О нас</a></li>
+                    <li><a href="#" className={styles.link} onClick={() => setPage('wishlists')}>Вишлисты</a></li>
+                    <li><a href="#" className={styles.link} onClick={() => setPage('account')}>Мой аккаунт</a></li>
+                </ul>
+            </nav>
+        </header>
+    )
 }
