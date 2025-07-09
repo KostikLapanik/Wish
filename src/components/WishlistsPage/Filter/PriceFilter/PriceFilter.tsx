@@ -27,7 +27,7 @@ export function PriceFilter() {
                 onInput={(e) => setPrice(e.currentTarget.value)} value={price} min="10" max="5000" />
 
             <div className={styles.slider}>
-                <div className={styles.slider__fill} style={{ width: `${price / 50}%` }}></div>
+                <div className={styles.slider__fill} style={{ width: `${Number(price) / 50}%` }}></div>
 
                 <input type="range" id="price" min="10" max="5000" value={price} name="price"
                     title='price' onChange={(e) => setPrice(e.currentTarget.value)} />
