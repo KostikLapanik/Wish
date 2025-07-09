@@ -5,13 +5,13 @@ import styles from './PriceFilter.module.scss';
 export function PriceFilter() {
     const [price, setPrice] = useState('100');
 
-    const priceSpan: HTMLElement | null = document.querySelector('#priceSpan');
+    // const priceSpan: HTMLElement | null = document.querySelector('#priceSpan');
 
-    if (+price <= 400 && priceSpan) {
-        priceSpan.style.color = 'black'
-    } else if (+price > 400 && priceSpan) {
-        priceSpan.style.color = 'white'
-    }
+    // if (+price <= 400 && priceSpan) {
+    //     priceSpan.style.color = 'black'
+    // } else if (+price > 400 && priceSpan) {
+    //     priceSpan.style.color = 'white'
+    // }
 
     if (+price > 5000) {
         setPrice('5000');
