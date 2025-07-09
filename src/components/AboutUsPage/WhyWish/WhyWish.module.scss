@@ -13,21 +13,29 @@
     margin: 0 auto;
     text-align: center;
     font-size: 18px;
+}
 
-    div {
-        box-shadow: 0 5px 15px var(--primary-color);
-        border-radius: 20px;
-        padding: 15px;
-        transition: var(--primary-transition);
-        cursor: pointer;
+.reason {
+    box-shadow: 0 5px 15px var(--primary-color);
+    border-radius: 20px;
+    padding: 15px;
+    transition: var(--primary-transition);
+    cursor: pointer;
 
-        i {
-            font-size: 29px;
-            margin-bottom: 15px;
-        }
-
-        &:hover {
-            box-shadow: 0 5px 15px var(--white);
-        }
+    i {
+        font-size: 29px;
+        margin-bottom: 15px;
     }
+
+    &:hover {
+        box-shadow: 0 5px 15px var(--white);
+    }
+}
+
+.reasonPressed {
+    transform: scale(0.9);
+}
+
+.reasonReleased {
+    transform: scale(1.1);
 }

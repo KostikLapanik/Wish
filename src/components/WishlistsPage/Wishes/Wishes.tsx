@@ -6,14 +6,17 @@ import globalStyles from '../../global.module.css';
 export function Wishes({ isFiltersOpen }: { isFiltersOpen: boolean }) {
     const wishes = document.querySelector(`.${styles.wishes}`);
 
-    if (isFiltersOpen && wishes) {
-        wishes.style.padding = '30px 30px 30px 414px'
-    } else if (!isFiltersOpen && wishes) {
-        wishes.style.padding = '30px'
+    if (wishes) {
+        if (isFiltersOpen) {
+            wishes.classList.add(styles.wishesOpen);
+        } else {
+            wishes.classList.remove(styles.wishesOpen);
+        }
     }
 
     return (
-        <section className={`${globalStyles.wishWrapper} ${styles.wishes}`}>
+        <section
+            className={`${globalStyles.wishWrapper} ${styles.wishes} ${isFiltersOpen ? styles.wishesOpen : ''}`}>
             <Wish type='basic' />
             <Wish type='basic' />
             <Wish type='basic' />

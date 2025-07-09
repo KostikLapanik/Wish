@@ -2,3 +2,7 @@
     padding: 30px;
     transition: var(--primary-transition);
 }
+
+.wishesOpen {
+    padding: 30px 30px 30px 414px;
+}

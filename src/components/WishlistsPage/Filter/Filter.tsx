@@ -15,10 +15,14 @@ export function Filter({ isFiltersOpen, setIsFiltersOpen }: Props) {
 
     const filtersSection = document.querySelector(`.${styles.filter}`);
 
-    if (isFiltersOpen && filtersSection) {
-        filtersSection.style.transform = 'translateX(0)';
-    } else if (!isFiltersOpen && filtersSection) {
-        filtersSection.style.transform = 'translateX(-200%)';
+    if (filtersSection) {
+        if (isFiltersOpen) {
+            filtersSection.classList.add(styles.filterOpen);
+            filtersSection.classList.remove(styles.filterClosed);
+        } else {
+            filtersSection.classList.add(styles.filterClosed);
+            filtersSection.classList.remove(styles.filterOpen);
+        }
     }
 
     return (

@@ -3,10 +3,12 @@ import { useRef } from 'react';
 import styles from './DeliveryPoints.module.css';
 
 export function DeliveryPoints() {
-    const scrollRef = useRef(null);
+    const scrollRef = useRef<HTMLDivElement>(null);
     const scrollStep = 300;
 
     const scrollLeft = () => {
+        if (!scrollRef.current) return;
+
         scrollRef.current.scrollBy({
             left: -scrollStep,
             behavior: 'smooth'
@@ -14,6 +16,8 @@ export function DeliveryPoints() {
     };
 
     const scrollRight = () => {
+        if (!scrollRef.current) return;
+
         scrollRef.current.scrollBy({
             left: scrollStep,
             behavior: 'smooth'
